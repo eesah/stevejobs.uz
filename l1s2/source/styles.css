@@ -1,0 +1,142 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #2f2f2f url('./img/background.jpg') 50%;
+  background-size: cover;
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+  line-height: 19px;
+  color: #333;
+  min-height: 100%;
+}
+
+.root {
+  width: 340px;
+  margin: 100px auto;
+}
+
+.card {
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 22px 50px rgba(14,21,47, .2), 0 8px 20px rgba(14,21,47, .2);
+  overflow: hidden;
+}
+
+.card__top {
+  padding: 20px 20px 30px;
+  text-align: center;
+}
+
+.card__dots {
+  margin-bottom: 10px;
+}
+
+.card__title {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.dots__item {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #dedede;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 2px;
+}
+
+.dots__item_active {
+  background: #aaa;
+}
+
+.options {
+  border-top: 1px solid #dedede;
+}
+
+.options__item {
+  border-bottom: 1px solid #dedede;
+  padding: 15px 45px 15px 30px;
+  cursor: pointer;
+  transition: background 0.15s ease-in-out;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.options__item_active .options__text {
+  color: #000;
+}
+
+.options__item_active::after {
+  content: '';
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -10px;
+  background: url('./img/check.svg');
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+}
+
+.options__item:last-child {
+  border-bottom: 0;
+}
+
+.options__item:hover {
+  background: #f1f1f1;
+}
+
+.options__icon {
+  width: 40px;
+  margin-right: 20px;
+}
+
+.options__text {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #aaa;
+  flex-grow: 1;
+}
+
+.button {
+  background: #5A8BDD;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  transition: background 0.15s ease-in-out;
+  position: relative;
+}
+
+.button:hover {
+  background: #558EF3;
+}
+
+.button:active {
+  top: 1px;
+}
+
+.button__text {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.button__icon {
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+}

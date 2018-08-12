@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 1 - Step 6</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!--
+    Подсказки:
+
+    1.
+    У нас есть несколько кнопок с центрированным текстом и иконка на стороне.
+    Ваш css должен быть подготовлен для обработки большего текста в кнопках.
+    Правильный способ решения этой проблемы это применить горизонтальный пэддинг для обеих сторон (чтобы текст оставался центрированным)
+    
+
+    2.
+    Лучший способ обработки марджинов между кнопками это добавление другого класса для него.
+    Если бы мы просто установили марджины по умолчанию для всех кнопок в нашем проекте которые могли
+    бы стать причиной проблем когда будет необходимость использования кнопок в других частях страницы.
+  
+
+  -->
+
+  <div class="root">
+    <div class="card">
+      <div class="card__inner">
+        <div class="card__content">
+          <div class="card__title">
+            Зарегистрироваться
+          </div>
+          <div class="card__subtitle">
+            Используйте социальные сети для мгновенной регистрации<br />
+            Вы не потратите время на подтверждение скучных электронных писем.
+          </div>
+          <div class="card__buttons">
+            <button class="button card__button">
+              <img src="./img/googleplus.svg" class="button__icon" />
+              <span class="button__text">
+                Зарегистрироваьтся через Google+
+              </span>
+            </button>
+
+            <button class="button card__button">
+              <img src="./img/facebook.svg" class="button__icon" />
+              <span class="button__text">
+                Зарегистрироваться через Фейсбук
+              </span>
+            </button>
+
+            <button class="button card__button">
+              <img src="./img/twitter.svg" class="button__icon" />
+              <span class="button__text">
+                Зарегистрироваться через Твиттер
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="card__additional">
+          <div class="card__note">
+            Вы все еще можете зарегистрироваться через Вашу электронную почту
+          </div>
+          <a href="#" class="card__email">
+            Зарегистрироваться через электронную почту
+          </a>
+        </div>
+      </div>
+      <div class="card__side"></div>
+    </div>
+  </div>
+</body>
+</html>

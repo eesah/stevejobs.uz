@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 1 - Step 8</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!--
+    Подсказки:
+
+    Иногда случается и у вас нет шансов обсудить некоторые моменты в дизайне и решить как писать код
+    самому.
+    В этом шаге самая сложная часть для большинства программистов это стилизация линии после заголовка,
+    особенно когда ее длина может изменится.
+
+    Наше решение было сделать линию 100% ширины но спрятать ее под заголовком с белыми фоном.
+    Вы можете попробовать изменить текст заголовка и увидеть его поведения для различных кейсов.
+  -->
+
+  <div class="root">
+    <div class="card">
+      <div class="card__side">
+        <div class="card__navigation card__navigation_left">
+          <a href="#" class="link card__navigation-link">
+            <img src="./img/arrow-back.svg" class="link__icon" />
+            <span class="link__text">
+              Back
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="card__main">
+        <div class="card__navigation card__navigation_right">
+          <a href="#" class="link card__navigation-link">
+            <span class="link__text">
+              Netherlands
+            </span>
+          </a>
+
+          <a href="#" class="link card__navigation-link card__navigation-link_active">
+            <span class="link__text">
+              Spain
+            </span>
+          </a>
+
+          <a href="#" class="link card__navigation-link">
+            <span class="link__text">
+              France
+            </span>
+          </a>
+        </div>
+
+        <div class="card__title">
+          <span class="card__title-inner">
+            Visiting the pastelle city
+          </span>
+        </div>
+
+        <div class="card__subtitle">
+          By <b>Jerry Henderson</b>, in Tourism
+        </div>
+
+        <div class="card__content">
+          <div class="card__preview">
+            <div class="preview">
+              <div class="preview__icon">
+                <img src="./img/play.svg" class="preview__play" />
+              </div>
+              <img src="./img/preview.jpg" class="preview__image" />
+            </div>
+
+            <a href="#" class="link card__preview-link">
+              <span class="link__text">
+                View all photos
+              </span>
+              <img src="./img/arrow-forward.svg" class="link__icon" />
+            </a>
+          </div><!--
+          --><div class="card__text">
+            As you drive into the town from Alicante airport you will pass between two salt lakes – one is blue/green and the other is an impressive pink colour.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  background: #16a085;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.root {
+  width: 600px;
+  margin: 100px auto;
+}
+
+.card {
+  border-radius: 4px;
+  padding: 40px 70px 200px;
+  box-shadow: 0 22px 50px rgba(14,21,47, .2), 0 8px 20px rgba(14,21,47, .2);
+  background: #fff;
+  position: relative;
+}
+
+.card__inner {
+  position: relative;
+  z-index: 2;
+}
+
+.card__background {
+  background: url('./img/bicycle.png') no-repeat 50% 0;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 280px;
+}
+
+.card__top {
+  display: flex;
+  align-items: center;
+}
+
+.card__title {
+  flex-grow: 1;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.card__account {
+  text-decoration: none;
+  transition: box-shadow 0.2s ease-in;
+  border-radius: 50%;
+  padding: 8px;
+  border: 1px solid #dedede;
+  position: relative;
+}
+
+.card__account:hover {
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.card__account:active {
+  top: 1px;
+}
+
+.card__account-icon {
+  display: block;
+}
+
+.card__subtitle {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.card__order {
+  margin-top: 40px;
+}
+
+.order__item {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.order__item:last-child {
+  padding: 0;
+}
+
+.order__name {
+  flex-grow: 1;
+  color: #5c5c5c;
+}
+
+.order__price,
+.order__item_total .order__name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.order__item_total .order__name {
+  text-transform: uppercase;
+}

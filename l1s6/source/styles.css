@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  background: #4E515D;
+}
+
+.root {
+  width: 1050px;
+  margin: 100px auto;
+}
+
+.card {
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 22px 50px rgba(14, 21, 47, .2), 0 8px 20px rgba(14, 21, 47, .2);
+  overflow: hidden;
+  display: flex;
+}
+
+.card__inner {
+  flex-grow: 1;
+}
+
+.card__content {
+  padding: 80px 60px;
+}
+
+.card__side {
+  background: #fafafa url('./img/side.jpg') no-repeat 50%;
+  background-size: cover;
+  width: 400px;
+}
+
+.card__title {
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 300;
+}
+
+.card__subtitle {
+  color: #aaa;
+  font-size: 13px;
+  margin-top: 15px;
+  line-height: 17px;
+}
+
+.card__buttons {
+  margin-top: 60px;
+}
+
+.card__button {
+  margin-top: 20px;
+}
+
+.card__additional {
+  padding: 40px 60px;
+  border-top: 1px solid #f1f1f1;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.card__note {
+  flex-grow: 1;
+}
+
+.card__email {
+  color: #8b8b8c;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out;
+}
+
+.card__email:hover {
+  color: #000;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  border: 1px solid #EEF0F3;
+  border-radius: 4px;
+  background: #fff;
+  min-height: 60px;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 15px;
+  font-weight: 700;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+  position: relative;
+  outline: 0;
+  color: #8b8b8c;
+  padding: 0 60px;
+}
+
+.button:hover {
+  border-color: #fff;
+  box-shadow: 0 6px 30px 0 rgba(0,0,0, 0.08);
+  color: #333;
+}
+
+.button__icon {
+  position: absolute;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  margin-top: -10px;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 1 - Step 5</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Prompt:900" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!--
+    Подсказки:
+
+    1.
+    Вам следует использовать background-size: cover для таких фоновых изображий для правильного воспроизведения во всех размерах экранов.
+  
+
+    2.
+    Как в предыдующих дизайнах, правильно будет использовать тот же код для все value секций,
+    вне зависимости позиционированы они горизонтально или вертикально.
+    Позиционирование может быть обработанок отдельными врапперами.
+
+  -->
+
+  <div class="root">
+    <div class="ticket">
+      <div class="ticket__main">
+        <div class="ticket__location">
+          <div class="ticket__code">
+            FRA
+          </div>
+          <div class="ticket__city">
+            Франкфурт
+          </div>
+        </div>
+        <div class="ticket__connector">&mdash;</div>
+        <div class="ticket__location ticket__location_destination">
+          <div class="ticket__code">
+            AMS
+          </div>
+          <div class="ticket__city">
+            Амстердам
+          </div>
+        </div>
+      </div>
+
+      <div class="ticket__additional">
+        <div class="columns">
+          <div class="columns__item columns__item_third">
+            <div class="ticket__section">
+              <div class="ticket__label">
+                Рейс
+              </div>
+              <div class="ticket__value">
+                815
+              </div>
+            </div>
+          </div><!--
+          --><div class="columns__item columns__item_third">
+          <div class="ticket__section">
+            <div class="ticket__label">
+              Ворота
+            </div>
+            <div class="ticket__value">
+              23G
+            </div>
+          </div>
+          </div><!--
+          --><div class="columns__item columns__item_third">
+          <div class="ticket__section">
+            <div class="ticket__label">
+              Место
+            </div>
+            <div class="ticket__value">
+              10F
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ticket__meta">
+        <div class="columns">
+          <div class="columns__item columns__item_half">
+            <div class="ticket__section">
+              <div class="ticket__label">
+                Пассажир
+              </div>
+              <div class="ticket__value">
+                Роберт де Ниор
+              </div>
+            </div>
+
+            <div class="ticket__section">
+              <div class="ticket__label">
+                Класс
+              </div>
+              <div class="ticket__value">
+                Бизнес
+              </div>
+            </div>
+
+            <div class="ticket__section">
+              <div class="ticket__label">
+                Отправлегние
+              </div>
+              <div class="ticket__value">
+                3:45am, Dec 15
+              </div>
+            </div>
+          </div><!--
+          --><div class="columns__item columns__item_half">
+            <img src="./img/qr.svg" class="ticket__qr" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

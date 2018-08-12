@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 1 - Step 4</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!--
+    Подсказки:
+
+    1.
+    У нас есть идеальный пример переиспользования одинакового блока кода здесь в разных положениях.
+    messages html одинаков для всех случаев и добавления 1 класса для сообщения изменяет его визуальные свойства
+    без необходимости копипейстить css
+
+    2.
+    Оборачивание ваших полей и кнопок внутри формы явлется правильной практикой.
+    Это позволяется пользователям отправлять формы не только нажимая на кнопку мышкой
+    но также и другими нативными свойствами, как нажатием кнопки Энтер
+
+  -->
+
+  <div class="root">
+    <div class="chat">
+      <div class="chat__header">
+        <div class="chat__title">
+          <span class="chat__name">
+            Марк Цукерберг
+          </span>
+        </div>
+
+        <button class="chat__close"></button>
+      </div>
+
+      <div class="chat__window">
+        <div class="chat__separator">
+          <div class="chat__date">
+            Сегодня
+          </div>
+        </div>
+
+        <div class="message chat__message">
+          <div class="message__time">
+            10:53
+          </div>
+          <div class="message__content">
+            Привет Марк! Я сделал новый дизнай для нового приложения Мессенджера
+          </div>
+        </div>
+
+        <div class="message message_response chat__message">
+          <div class="message__time">
+            10:57
+          </div>
+          <div class="message__content">
+            Эй! Отправь это моему ассистенту и мы сделаем обзор в течении года.
+          </div>
+        </div>
+
+        <div class="message chat__message">
+          <div class="message__time">
+            11:03
+          </div>
+          <div class="message__content">
+            Но Марк...
+          </div>
+        </div>
+
+        <div class="message message_error message_response chat__message">
+          <div class="message__content">
+            Вы были заблокированы пользователем.
+          </div>
+        </div>
+
+        <form class="chat__bottom" action="#">
+          <input type="text" class="chat__input" placeholder="Enter your message" />
+          <button class="chat__submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

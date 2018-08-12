@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  background: #F2CE97;
+  font-weight: 300;
+}
+
+.root {
+  width: 1000px;
+  margin: 100px auto;
+}
+
+.card {
+  background: #fff;
+  box-shadow: 0 22px 50px rgba(14, 21, 47, .1), 0 8px 20px rgba(14, 21, 47, .1);
+  display: flex;
+}
+
+.card__info {
+  width: 40%;
+  padding: 60px 40px 160px;
+  color: #fff;
+  background: #484956;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.card__content {
+  width: 60%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__title {
+  position: relative;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.card__title::before {
+  content: '';
+  position: absolute;
+  height: 4px;
+  bottom: -15px;
+  left: 0;
+  width: 60px;
+  background-color: #E37B62;
+}
+
+.card__title-start {
+  display: block;
+  font-weight: 500;
+}
+
+.card__author {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
+}
+
+.card__avatar {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, .6);
+}
+
+.card__name {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+.card__text {
+  padding: 60px 40px 30px;
+  flex-grow: 1;
+}
+
+.card__paragraph {
+  font-size: 20px;
+  line-height: 30px;
+  margin: 20px 0 0;
+}
+
+.card__paragraph:first-child {
+  margin-top: 0;
+}
+
+.card__paragraph:first-child:first-letter {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.card__meta {
+  padding: 30px 40px;
+  box-shadow: 0 -8px 10px rgba(14, 21, 47, .04);
+  display: flex;
+  align-items: center;
+}
+
+.card__date {
+  flex-grow: 1;
+}
+
+.card__action {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.card__action:first-child {
+  margin-left: 0;
+}
+
+.card__action-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.card__action-text {
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 5px;
+  color: #aaa;
+}

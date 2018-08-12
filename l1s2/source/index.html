@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Loop 1 - Step 2</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <!--
+    Подсказки:
+
+    1.
+    Вы можете найти классы как точки__точки единицы___кдиница_актив в коде.
+    Этод метод названия css называется ВЕМ и вы можете легко найти информацию 
+    об этом в гугле.
+    _active часть означает что мы модифицируем оригинальный класс изменяя текущую или
+    добавляя новые стили в элемент.
+    Это используется для предотвращения копипейста одинакового кода так как стили по умолчанию
+    для элементов применяются классом dots__item.
+
+    2.
+    Flex используется для options__item для предотвращения поломки кода когда опция содержит
+    больше текста.
+    Вы не можете быть уверены в том что в будущем может быть длинное название.
+    Даже если дизайн в данный момент содержит 1-словные названия.
+  -->
+
+  <div class="root">
+    <div class="card">
+      <div class="card__top">
+        <div class="dots card__dots">
+          <div class="dots__item dots__item_active"></div>
+          <div class="dots__item"></div>
+          <div class="dots__item"></div>
+        </div>
+
+        <div class="card__title">
+          Метод оплаты
+        </div>
+      </div>
+
+      <div class="options">
+        <div class="options__item">
+          <img src="./img/visa.svg" alt="" class="options__icon" />
+          <span class="options__text">Visa</span>
+        </div>
+        <div class="options__item options__item_active">
+          <img src="./img/mastercard.svg" alt="" class="options__icon" />
+          <span class="options__text">Mastercard</span>
+        </div>
+        <div class="options__item">
+          <img src="./img/maestro.svg" alt="" class="options__icon" />
+          <span class="options__text">Maestro</span>
+        </div>
+      </div>
+
+      <a class="button" href="#action">
+        <span class="button__text">
+          Слеюущий шаг
+        </span>
+        <img class="button__icon" src="./img/arrow.svg" />
+      </a>
+    </div>
+  </div>
+</body>
+</html>
